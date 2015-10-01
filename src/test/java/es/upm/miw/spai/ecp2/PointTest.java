@@ -42,6 +42,18 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    
+    public void testcalculaVector(){
+    	this.pt.calculaVector(new Point(6, 7));
+        assertEquals(4, pt.getX());
+        assertEquals(4, pt.getY());
+    }
+    
+    public void testMultiplicaInt(){
+    	this.pt.multiplicaIntPunto(6);
+        assertEquals(12, pt.getX());
+        assertEquals(18, pt.getY());
+    }
 
     @Test
     public void testToString() {
