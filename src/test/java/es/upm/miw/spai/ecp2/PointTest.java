@@ -42,7 +42,7 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
-    
+/*    
     public void testcalculaVector(){
     	this.pt.calculaVector(new Point(6, 7));
         assertEquals(4, pt.getX());
@@ -59,5 +59,5 @@ public class PointTest {
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());
     }
-
+*/
 }
