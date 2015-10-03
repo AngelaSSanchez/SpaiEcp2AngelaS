@@ -43,12 +43,14 @@ public class PointTest {
         assertEquals(2, pt.getY());
     }
     
+    @Test
     public void testcalculaVector(){
     	this.pt.calculaVector(new Point(6, 7));
         assertEquals(4, pt.getX());
         assertEquals(4, pt.getY());
     }
     
+    @Test
     public void testMultiplicaInt(){
     	this.pt.multiplicaIntPunto(6);
         assertEquals(12, pt.getX());
