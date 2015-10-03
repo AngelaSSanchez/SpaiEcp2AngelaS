@@ -29,7 +29,7 @@ public class DecimalCollectionTest {
 	
 	@Test
 	public void testMedia() {
-		assertEquals(10.5,dc.media(),10e-5);
+		assertEquals(5.25,dc.media(),10e-5);
 	}
 	
 	@Test
