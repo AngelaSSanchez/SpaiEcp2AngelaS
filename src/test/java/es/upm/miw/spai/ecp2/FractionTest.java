@@ -37,12 +37,12 @@ public class FractionTest {
 		assertEquals(1,f.getNumerator());
 		assertEquals(3,f.getDenominator());
 	}
-	
+	*/
 	@Test
 	public void testFraccionMulti(){
 		this.f.multiplicarFraccion(new Fraction(1,3));
 		assertEquals(7,f.getNumerator());
 		assertEquals(6,f.getDenominator());
 	}
-	 */
+	 
 }
