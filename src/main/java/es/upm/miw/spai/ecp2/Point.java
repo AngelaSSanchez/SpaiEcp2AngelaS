@@ -36,6 +36,11 @@ public class Point {
         this.x -= origin.getX();
         this.y -= origin.getY();
     }
+    
+    public void calculaVector(Point b){
+    	this.x = b.x - this.x;
+    	this.y = b.y - this.y;
+    }
 
     @Override
     public String toString() {
