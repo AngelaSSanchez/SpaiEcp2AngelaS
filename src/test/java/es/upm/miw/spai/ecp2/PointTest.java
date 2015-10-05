@@ -49,14 +49,14 @@ public class PointTest {
         assertEquals(4, pt.getX());
         assertEquals(4, pt.getY());
     }
-    /*
+    
     @Test
-    public void testMultiplicaInt(){
-    	this.pt.multiplicaIntPunto(6);
+    public void testMultiplyIntPoint(){
+    	this.pt.multiplyIntPoint(6);
         assertEquals(12, pt.getX());
         assertEquals(18, pt.getY());
     }
-     */
+    
     @Test
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());

@@ -65,4 +65,11 @@ public class Fraction {
     	this.denominator = f.denominator * this.denominator;
     }
     
+    public void minorFraction(Fraction f)  {
+    	if(f.decimal() < this.decimal()){
+    		this.numerator = f.getNumerator();
+    		this.denominator = f.getDenominator();
+    	}
+    }
+    
 }
