@@ -38,11 +38,19 @@ public class FractionTest {
 		assertEquals(3,f.getDenominator());
 	}
 	*/
+	
 	@Test
 	public void testFraccionMulti(){
 		this.f.multiplicarFraccion(new Fraction(1,3));
 		assertEquals(7,f.getNumerator());
 		assertEquals(6,f.getDenominator());
 	}
-	 
+	
+	@Test
+	public void testDividirFraccion(){
+		Fraction fraction = new Fraction(2,3);
+		f.dividirFraccion(fraction);
+		assertEquals(21, f.getNumerator());
+		assertEquals(4, f.getDenominator());
+	}
 }
