@@ -6,6 +6,8 @@ public class User {
     private String name;
 
     private String familyName;
+    
+    private String secondFamilyName;
 
     private String format(String string) {
         string = string.trim();
@@ -18,6 +20,12 @@ public class User {
         this.familyName = this.format(familyName);
     }
 
+    public User(String name, String familyName, String secondFamilyName) {
+        this.name = this.format(name);
+        this.familyName = this.format(familyName);
+        this.secondFamilyName = this.format(secondFamilyName);
+    }
+
     public int getNumber() {
         return this.number;
     }
@@ -28,6 +36,10 @@ public class User {
 
     public String getFamilyName() {
         return this.familyName;
+    }
+
+    public String getSecondFamilyName() {
+        return this.secondFamilyName;
     }
 
     public String fullName() {
