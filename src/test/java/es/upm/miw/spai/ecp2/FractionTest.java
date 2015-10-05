@@ -30,14 +30,14 @@ public class FractionTest {
 		assertEquals(21,f.getNumerator());
 		assertEquals(2,f.getDenominator());
 	}
-	
+	*/	
 	@Test
-	public void testFraccionMenor(){
-		this.f.menorFraccion(new Fraction(1,3));
+	public void testMinorFraction(){
+		this.f.minorFraction(new Fraction(1,3));
 		assertEquals(1,f.getNumerator());
 		assertEquals(3,f.getDenominator());
 	}
-	*/
+
 	@Test
 	public void testFraccionMulti(){
 		this.f.multiplicarFraccion(new Fraction(1,3));

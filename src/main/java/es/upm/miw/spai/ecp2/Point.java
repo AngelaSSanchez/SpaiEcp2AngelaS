@@ -41,6 +41,11 @@ public class Point {
     	this.x = b.x - this.x;
     	this.y = b.y - this.y;
     }
+    
+    public void multiplyIntPoint(int i){
+    	this.x *= i;
+    	this.y *= i;
+    }
 
     @Override
     public String toString() {
