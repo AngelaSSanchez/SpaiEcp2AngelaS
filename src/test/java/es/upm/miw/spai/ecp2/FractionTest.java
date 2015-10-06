@@ -23,26 +23,26 @@ public class FractionTest {
 	public void testDecimal() {
 		assertEquals(3.5,f.decimal(),10e-5);
 	}
-	/*
-	@Test 
-	public void testDivision(){
-		this.f.dividirFraccion(new Fraction(1,3));
-		assertEquals(21,f.getNumerator());
-		assertEquals(2,f.getDenominator());
-	}
-	*/	
+	
 	@Test
 	public void testMinorFraction(){
 		this.f.minorFraction(new Fraction(1,3));
 		assertEquals(1,f.getNumerator());
 		assertEquals(3,f.getDenominator());
 	}
-
+	
 	@Test
 	public void testFraccionMulti(){
 		this.f.multiplicarFraccion(new Fraction(1,3));
 		assertEquals(7,f.getNumerator());
 		assertEquals(6,f.getDenominator());
 	}
-	 
+	
+	@Test
+	public void testDividirFraccion(){
+		Fraction fraction = new Fraction(2,3);
+		f.dividirFraccion(fraction);
+		assertEquals(21, f.getNumerator());
+		assertEquals(4, f.getDenominator());
+	}
 }

@@ -72,4 +72,9 @@ public class Fraction {
     	}
     }
     
+    public void dividirFraccion(Fraction f){
+    	this.numerator = this.numerator * f.getDenominator();
+    	this.denominator = this.denominator * f.getNumerator();
+    }
+    
 }
