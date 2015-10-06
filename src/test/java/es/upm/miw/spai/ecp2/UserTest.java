@@ -38,11 +38,20 @@ public class UserTest {
 	public void testInitials() {
 		assertEquals("A.", us.initials());
 	}
-	/*
+	
+	@Test
+	public void testOrdenaNombre(){
+		us = new User("David","Romero","Escobar");
+		assertEquals("Romero Escobar, David",us.ordenaNombre());
+		
+		us = new User(1,"John","Smith");
+		assertEquals("Smith, John",us.ordenaNombre());
+	}
+	
 	@Test
 	public void testFormatName(){
 		us = new User("AnGeLa","serrano","SANCHEZ");
 		assertEquals("Serrano Sanchez, Angela",us.ordenaNombre());
 	}
-	*/
+	
 }

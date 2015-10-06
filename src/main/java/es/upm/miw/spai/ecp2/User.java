@@ -49,4 +49,13 @@ public class User {
     public String initials() {
         return this.name.substring(0, 1) + ".";
     }
+    
+    public String ordenaNombre(){
+    	String nombreOrdenado;
+    	if (this.secondFamilyName==null || this.secondFamilyName.equals(""))
+    		nombreOrdenado = this.familyName + ", " + this.name;
+    	else
+    		nombreOrdenado = this.familyName + " " + this.secondFamilyName + ", " + this.name;
+    	return nombreOrdenado;
+    }
 }

@@ -35,6 +35,16 @@ public class DecimalCollection {
         return higher;
     }
     
+    public double smaller(){
+    	double smaller = Double.POSITIVE_INFINITY;
+    	for(double item: this.collection){
+    		if (item < smaller)
+    			smaller = item;
+    	}
+    	
+    	return smaller;
+    }
+    
     public double media() {
     	return this.sum() / this.size();
     }	

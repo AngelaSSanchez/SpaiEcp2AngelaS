@@ -31,12 +31,12 @@ public class DecimalCollectionTest {
 	public void testMedia() {
 		assertEquals(5.25,dc.media(),10e-5);
 	}
-	/*
+	
 	@Test
 	public void testSmaller() {
 		assertEquals(1.2,dc.smaller(),10e-5);
 	}
-	*/
+	
 	@Test
 	public void testHigher() {
 		assertEquals(14.3,dc.higher(),10e-5);
