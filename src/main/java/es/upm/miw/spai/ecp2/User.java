@@ -51,6 +51,11 @@ public class User {
     }
     
     public String ordenaNombre(){
-    	return this.familyName + " " + this.secondFamilyName + ", " + this.name;
+    	String nombreOrdenado;
+    	if (this.secondFamilyName==null || this.secondFamilyName.equals(""))
+    		nombreOrdenado = this.familyName + ", " + this.name;
+    	else
+    		nombreOrdenado = this.familyName + " " + this.secondFamilyName + ", " + this.name;
+    	return nombreOrdenado;
     }
 }
