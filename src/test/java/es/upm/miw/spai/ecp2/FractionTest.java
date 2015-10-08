@@ -37,6 +37,7 @@ public class FractionTest {
 		assertEquals(7,f.getNumerator());
 		assertEquals(6,f.getDenominator());
 	}
+
 	
 	@Test
 	public void testDivideFraction(){
@@ -45,4 +46,5 @@ public class FractionTest {
 		assertEquals(21, f.getNumerator());
 		assertEquals(4, f.getDenominator());
 	}
+
 }
