@@ -44,8 +44,8 @@ public class PointTest {
     }
     
     @Test
-    public void testcalculaVector(){
-    	this.pt.calculaVector(new Point(6, 7));
+    public void testcalculateVector(){
+    	this.pt.calculateVector(new Point(6, 7));
         assertEquals(4, pt.getX());
         assertEquals(4, pt.getY());
     }

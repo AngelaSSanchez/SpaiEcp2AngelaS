@@ -50,7 +50,7 @@ public class User {
         return this.name.substring(0, 1) + ".";
     }
     
-    public String ordenaNombre(){
+    public String orderName(){
     	String nombreOrdenado;
     	if (this.secondFamilyName==null || this.secondFamilyName.equals(""))
     		nombreOrdenado = this.familyName + ", " + this.name;

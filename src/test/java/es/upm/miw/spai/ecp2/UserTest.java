@@ -40,18 +40,18 @@ public class UserTest {
 	}
 	
 	@Test
-	public void testOrdenaNombre(){
+	public void testOrderName(){
 		us = new User("David","Romero","Escobar");
-		assertEquals("Romero Escobar, David",us.ordenaNombre());
+		assertEquals("Romero Escobar, David",us.orderName());
 		
 		us = new User(1,"John","Smith");
-		assertEquals("Smith, John",us.ordenaNombre());
+		assertEquals("Smith, John",us.orderName());
 	}
 	
 	@Test
 	public void testFormatName(){
 		us = new User("AnGeLa","serrano","SANCHEZ");
-		assertEquals("Serrano Sanchez, Angela",us.ordenaNombre());
+		assertEquals("Serrano Sanchez, Angela",us.orderName());
 	}
 	
 }

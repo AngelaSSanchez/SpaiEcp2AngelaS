@@ -32,16 +32,16 @@ public class FractionTest {
 	}
 	
 	@Test
-	public void testFraccionMulti(){
-		this.f.multiplicarFraccion(new Fraction(1,3));
+	public void testFractionMulti(){
+		this.f.multiplyFraction(new Fraction(1,3));
 		assertEquals(7,f.getNumerator());
 		assertEquals(6,f.getDenominator());
 	}
 	
 	@Test
-	public void testDividirFraccion(){
+	public void testDivideFraction(){
 		Fraction fraction = new Fraction(2,3);
-		f.dividirFraccion(fraction);
+		f.divideFraction(fraction);
 		assertEquals(21, f.getNumerator());
 		assertEquals(4, f.getDenominator());
 	}

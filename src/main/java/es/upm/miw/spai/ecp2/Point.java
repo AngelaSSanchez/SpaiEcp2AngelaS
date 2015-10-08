@@ -37,7 +37,7 @@ public class Point {
         this.y -= origin.getY();
     }
     
-    public void calculaVector(Point b){
+    public void calculateVector(Point b){
     	this.x = b.x - this.x;
     	this.y = b.y - this.y;
     }
